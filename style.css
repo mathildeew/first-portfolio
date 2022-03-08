@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "SometimesTimes";
+  src: url(fonts/sometimes-times.ttf);
+}
+
+@import url("https://use.typekit.net/rec3ffo.css");
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --lightblue: #c9d2de;
+  --darkblue: #303b4a;
+  --almostwhite: #fffefa;
+}
+
+/* BASE ----------*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 62.5%; /*62.5% of 16px base font size is 10px*/
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100vw;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--black);
+  font-family: "SometimesTimes";
+  font-size: 7rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+h2 {
+  color: var(--black);
+  font-family: "SometimesTimes";
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: var(--black);
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+/* NAVIGATION ---------- */
+header {
+  background-color: var(--almostwhite);
+  width: 100vw;
+  height: 90px;
+  border-bottom: 1px solid var(--black);
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  color: var(--black);
+  font-family: "SometimesTimes";
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  display: inline;
+}
+
+/* INTRO ---------- */
+.intro {
+  background-color: var(--lightblue);
+}
+
+.intro p {
+  font-family: "SometimesTimes";
+  font-size: 3rem;
+}
+
+/* INFO ---------- */
+.info {
+  background-color: var(--almostwhite);
+}
+
+.info li {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+/* PROJECTS ---------- */
+.projects {
+  background-color: var(--lightblue);
+}
+
+/* FOOTER / CONTACT ---------- */
+footer {
+  background-color: var(--darkblue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

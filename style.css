@@ -74,27 +74,48 @@ header {
   height: 90px;
   border-bottom: 1px solid var(--black);
   display: flex;
+  justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 header a {
   color: var(--black);
   font-family: "SometimesTimes";
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  margin: auto;
+}
+
+nav a {
+  padding: 5px;
+  margin: auto;
 }
 
 nav li {
   display: inline;
 }
 
+nav .icons {
+  width: 25%;
+}
+
+.nav-right {
+  display: flex;
+  width: 250px;
+  margin: auto;
+  justify-content: space-between;
+}
+
 /* INTRO ---------- */
 .intro {
   background-color: var(--lightblue);
+  text-align: center;
+  top: 90px;
 }
 
 .intro p {

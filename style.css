@@ -1,16 +1,13 @@
-@font-face {
-  font-family: "SometimesTimes";
-  src: url(fonts/sometimes-times.ttf);
-}
-
-@import url("https://use.typekit.net/rec3ffo.css");
+@import url("https://use.typekit.net/did6ouf.css");
 
 :root {
-  --white: #fff;
-  --black: #000;
-  --lightblue: #c9d2de;
-  --darkblue: #303b4a;
-  --almostwhite: #fffefa;
+  --lightbeige: #faf8f4;
+  --darkbeige: #f1eee6;
+  --grey: #67635f;
+  --almostblack: #2c2c2c;
+
+  --freight: "freight-big-pro", serif;
+  --quasi: "quasimoda", sans-serif;
 }
 
 /* BASE ----------*/
@@ -39,7 +36,7 @@
 
 #circle {
   position: fixed;
-  z-index: 5;
+  z-index: 1000;
   width: 17px;
   height: 17px;
   background-color: #94af94;
@@ -53,6 +50,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  background-color: var(--lightbeige);
   width: 100vw;
   margin: 0;
 }
@@ -66,113 +64,126 @@ a {
 }
 
 h1 {
-  color: var(--black);
-  font-family: "SometimesTimes";
-  font-size: 7rem;
-  font-weight: 100;
+  color: var(--lightbeige);
+  font-family: var(--freight);
+  font-size: 50px;
+  font-weight: 600;
   text-transform: uppercase;
-  padding-top: 50px;
 }
 
 h2 {
-  color: var(--black);
-  font-family: "SometimesTimes";
-  font-size: 2rem;
+  color: var(--almostblack);
+  font-family: var(--freight);
+  font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 h3 {
-  color: var(--black);
-  font-family: "neue-haas-grotesk-text", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 200;
+  color: var(--grey);
+  font-family: var(--quasi);
+  font-size: 1.8rem;
   text-transform: uppercase;
 }
 
 p {
-  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-family: "quasimoda", sans-serif;
   font-size: 1.6rem;
   font-weight: 200;
 }
 
 /* NAVIGATION ---------- */
-header {
-  background-color: var(--almostwhite);
-  width: 100vw;
-  height: 90px;
-  border-bottom: 1px solid var(--black);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-}
-
-header a {
-  color: var(--black);
-  font-family: "SometimesTimes";
-  font-size: 1.7rem;
-}
-
 nav {
+  background-color: var(--almostblack);
+  width: 100%;
+  height: 60px;
   display: flex;
-  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  z-index: 100;
 }
 
 nav a {
-  padding: 5px;
-  margin: auto;
+  color: var(--lightbeige);
+  font-family: "quasimoda", sans-serif;
+  margin: auto 10px;
 }
 
-nav li {
-  display: inline;
-}
-
-nav .icons {
-  width: 25%;
-}
-
-.nav-right {
+/* HEADER ---------- */
+header {
+  background-color: var(--almostblack);
+  width: 100%;
+  height: 500px;
+  border-radius: 0 0 50% 50% / 0 0 30% 30%;
   display: flex;
-  width: 250px;
-  margin: auto;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* INTRO ---------- */
-.intro {
-  background-color: var(--lightblue);
+header h1:first-of-type {
   text-align: center;
-  top: 90px;
 }
 
-.intro p {
-  font-family: "SometimesTimes";
-  font-size: 3rem;
+header h1:last-of-type {
+  text-align: end;
+  margin-right: 15px;
+}
+
+/* INFO-TEXT ---------- */
+.info-text {
+  margin: 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-text p {
+  margin-bottom: 10px;
 }
 
 /* INFO ---------- */
 .info {
-  background-color: var(--almostwhite);
+  background-color: var(--darkbeige);
+  margin: 50px 15px;
+  border-top-right-radius: 50%;
 }
 
 .info li {
-  font-family: "neue-haas-grotesk-text", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 200;
+  color: var(--grey);
+  font-family: var(--quasi);
 }
 
 /* PROJECTS ---------- */
 .projects {
-  background-color: var(--lightblue);
+  margin: 20px 15px;
+}
+
+.image-container {
+  width: 100%;
+  height: 145px;
+  background-color: var(--darkbeige);
+  border-color: var(--grey);
 }
 
 /* FOOTER / CONTACT ---------- */
 footer {
-  background-color: var(--darkblue);
+  background-color: var(--almostblack);
+  width: 100%;
+  height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+footer span {
+  color: var(--darkbeige);
+  font-family: var(--freight);
+  font-size: 52px;
+  text-transform: uppercase;
+}
+
+footer p {
+  color: var(--lightbeige);
+  font-size: 20px;
 }

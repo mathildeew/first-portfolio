@@ -1,8 +1,10 @@
 @import url("https://use.typekit.net/did6ouf.css");
 
 :root {
-  --background-color: #fff;
-  --text-color: #000;
+  --background-color: #faefef;
+  --text-color: #4d2a3f;
+  --burgundy: #4d2a3f;
+  --pink: #faefef;
   --heading-font: freight-big-pro, serif;
   --text-font: quasimoda, sans-serif;
 }
@@ -27,8 +29,6 @@ body {
 }
 
 main {
-  width: 95%;
-  margin: 0 auto;
 }
 
 /* Cursor */
@@ -51,20 +51,23 @@ a {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font: 3rem var(--heading-font);
+  color: var(--pink);
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
 }
 
 h2 {
-  font: 3rem var(--heading-font);
+  font: 8rem var(--heading-font);
   text-align: center;
-  margin-bottom: 20px;
+  padding-top: 60px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font: 2rem var(--text-font);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -74,13 +77,13 @@ p {
 /* HEADER 
 - - - - - - - - - - - - - - - - - - - - */
 header {
-  background-color: lightgray;
+  background-color: var(--burgundy);
   width: 100%;
   height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* animation: intro 1s ease-in-out; */
+  /* animation: intro 5s ease-in-out; */
 }
 
 @keyframes intro {
@@ -99,16 +102,14 @@ nav {
   height: 50vh;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 80px;
 }
 
 nav a {
   color: var(--text-color);
-  font-size: 4rem;
-  text-decoration: underline;
+  font: 5rem var(--heading-font);
+  text-decoration: 3px underline;
   letter-spacing: 3px;
   padding: 5px;
   transition: letter-spacing 1s ease-in;
@@ -121,6 +122,21 @@ nav a:hover {
 
 /*  PORTFOLIO
 - - - - - - - - - - - - - - - - - - - - */
+.portfolio {
+  background-color: var(--burgundy);
+}
+
+.content {
+  margin: 0 3%;
+}
+
+.portfolio h2,
+.portfolio h3,
+.portfolio p,
+.portfolio a {
+  color: var(--pink);
+}
+
 .project img {
   width: 100%;
   height: auto;
@@ -128,20 +144,45 @@ nav a:hover {
 }
 
 .project p {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .project a {
   font: 1.6rem var(--text-font);
   display: inline;
   margin-right: 10px;
+  margin-bottom: 60px;
 }
 
-/*  EDUCATION
+/*  About
 - - - - - - - - - - - - - - - - - - - - */
+.about h2,
+.about h3,
+.about p,
+.about span {
+  color: var(--burgundy);
+}
+
+.about .img {
+  background-color: lightgray;
+  width: 100%;
+  height: 440px;
+  margin-bottom: 60px;
+}
+
+.about span {
+  font: 3rem var(--text-font);
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.skills {
+  margin-bottom: 40px;
+}
+
 .group {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   margin-bottom: 40px;
 }
 
@@ -152,17 +193,37 @@ nav a:hover {
 /*  CONTACT
 - - - - - - - - - - - - - - - - - - - - */
 .contact {
+  background-color: var(--burgundy);
   height: 100vh;
   text-align: center;
 }
 
+.contact h2,
+.contact a {
+  color: var(--pink);
+}
+
 .contact a {
   font-size: 2rem;
+  text-decoration: none;
+}
+
+/*  FOOTER
+- - - - - - - - - - - - - - - - - - - - */
+footer {
+  color: var(--pink);
+  font: var(--text-font);
+  text-align: center;
+  background-color: var(--burgundy);
 }
 
 /*  MEDIA QUIERIES
 - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 900px) {
+  h1 {
+    font-size: 10rem;
+  }
+
   nav a {
     font-size: 7rem;
   }

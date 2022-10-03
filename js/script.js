@@ -1,3 +1,5 @@
+import projects from "./data/projects.js";
+
 // CIRCLE POINTER
 const circle = document.getElementById("circle");
 const circleStyle = circle.style;
@@ -9,4 +11,13 @@ document.addEventListener("mousemove", (e) => {
   });
 });
 
-// NAVIGATION BUTTON TO NEXT SECTION
+// Display projects
+const projectsContainer = document.querySelector("#projects");
+projects.forEach(function (project) {
+  projectsContainer += `
+                        <div class ="project">
+                          <img src=${project.image} alt=${project.title}/>
+                          <h3>${project.title}</h3>
+                          <p>${project.description}</p>
+                       `;
+});

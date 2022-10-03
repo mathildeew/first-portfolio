@@ -61,7 +61,7 @@ h1 {
 h2 {
   font: 8rem var(--heading-font);
   text-align: center;
-  padding-top: 60px;
+  padding-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -112,22 +112,19 @@ nav a {
   text-decoration: 3px underline;
   letter-spacing: 3px;
   padding: 5px;
-  transition: letter-spacing 1s ease-in;
-}
-
-nav a:hover {
-  letter-spacing: 25px;
-  transition: letter-spacing 0.2s ease-out;
 }
 
 /*  PORTFOLIO
 - - - - - - - - - - - - - - - - - - - - */
 .portfolio {
   background-color: var(--burgundy);
+  height: 1880px;
 }
 
 .content {
   margin: 0 3%;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio h2,
@@ -135,6 +132,10 @@ nav a:hover {
 .portfolio p,
 .portfolio a {
   color: var(--pink);
+}
+
+.project {
+  margin-bottom: 60px;
 }
 
 .project img {
@@ -154,7 +155,7 @@ nav a:hover {
   margin-bottom: 60px;
 }
 
-/*  About
+/*  ABOUT
 - - - - - - - - - - - - - - - - - - - - */
 .about h2,
 .about h3,
@@ -199,13 +200,21 @@ nav a:hover {
 }
 
 .contact h2,
-.contact a {
+.contact a,
+.icons i {
   color: var(--pink);
 }
 
 .contact a {
-  font-size: 2rem;
+  font: 2rem var(--text-font);
   text-decoration: none;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.icons i {
+  font-size: 3rem;
+  margin-right: 20px;
 }
 
 /*  FOOTER
@@ -220,6 +229,14 @@ footer {
 /*  MEDIA QUIERIES
 - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 900px) {
+  nav a {
+    transition: letter-spacing 1s ease-in;
+  }
+
+  nav a:hover {
+    letter-spacing: 25px;
+    transition: letter-spacing 0.2s ease-out;
+  }
   h1 {
     font-size: 10rem;
   }

@@ -5,60 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Mathilde Elinor - Web developer</title>
-    <link rel="icon" type="image/x-icon" href="icons/favicon - mw.png" />
+    <title>Mathilde Elinor</title>
   </head>
   <body>
-    <nav class="sticky" id="nav">
-      <a href="#">Top</a>
-      <a href="index.html#about">About</a>
-      <a href="index.html#footer">Projects</a>
-      <a href="#index.html#footer">Get in touch</a>
-    </nav>
+    <div id="wrapper">
+      <div id="circle" class="circle"></div>
+    </div>
+
     <header>
-      <h1>Mathilde</h1>
-      <h1>Elinor</h1>
+      <h1>Mathilde Elinor</h1>
     </header>
+
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
     <main>
-      <div id="wrapper">
-        <div id="circle" class="circle"></div>
+      <section id="portfolio" class="portfolio"></section>
+      <h2>Portfolio</h2>
+      <div class="project">
+        <img src="images/Skjermbilde 2022-10-03 kl. 13.04.03.png" alt="" />
+        <h3>Project title</h3>
+        <p>
+          I’m baby raclette aesthetic fam schlitz DIY pok pok vibecession
+          bushwick kombucha authentic raw denim marfa artisan hella pabst.
+          Biodiesel venmo everyday carry DSA fixie kogi synth coloring book.
+        </p>
+        <a href="#">Link</a>
+        <a href="#">GitHub</a>
       </div>
-      <section class="info-text" id="about">
-        <p>Chase ball of string eat plants, meow, and throw up because I ate plants going to catch the red dot today going to catch the red dot today. I could pee on this if I had the energy.</p>
-        <p>Chew iPad power cord steal the warm chair right after you get up for purr for no reason leave hair everywhere, decide to want nothing to do with my owner today.</p>
-        <p>Decide to want nothing to do with my owner today.</p>
-      </section>
-      <section class="info">
-        <h2>Languages</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-        <h2>Framework, libraries & software</h2>
-        <ul>
-          <li>Adobe XD</li>
-          <li>Photoshop</li>
-          <li>Illustrator</li>
-        </ul>
-        <h2>Education & experience</h2>
-        <ul>
-          <li>2021 - now: Noroff - Frond-end Development</li>
-          <li>2016 - now: Ses Optikk - Optometrist</li>
-          <li>2015 - 2019: USN - Optometry</li>
-        </ul>
+
+      <section id="about" class="about">
+        <h2>About</h2>
+
+        <h3>Skills</h3>
+        <p>HTML - CSS - JavaScript</p>
+        <p>Adobe XD - Photoshop - Illustrator</p>
+        <p>Wordpress</p>
+
+        <h3>Experiene</h3>
+        <div class="group">
+          <div class="left">
+            <p>2020 - now</p>
+          </div>
+          <div class="right">
+            <p>Ses Optikk</p>
+            <p>Optometrist</p>
+          </div>
+        </div>
+        <div class="group">
+          <div class="left">
+            <p>2019 - 2020</p>
+          </div>
+          <div class="right">
+            <p>Liens Optiske</p>
+            <p>Optometrist</p>
+          </div>
+        </div>
+        <div class="group">
+          <div class="left">
+            <p>2016 - 2019</p>
+          </div>
+          <div class="right">
+            <p>Ses Optikk</p>
+            <p>Part time</p>
+          </div>
+        </div>
+
+        <h3>Education</h3>
+        <div class="group">
+          <div class="left">
+            <p>2021 - now</p>
+          </div>
+          <div class="right">
+            <p>Noroff</p>
+            <p>Front end development</p>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="left">
+            <p>2018 - 2019</p>
+          </div>
+          <div class="right">
+            <p>The University of South-Eastern Norway</p>
+            <p>European Diploma</p>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="left">
+            <p>2015 - 2018</p>
+          </div>
+          <div class="right">
+            <p>The University of South-Eastern Norway</p>
+            <p>Bachelor in Optometry</p>
+          </div>
+        </div>
       </section>
 
-      <section class="projects" id="projects">
-        <div class="image-container"></div>
-        <h3>Title of project</h3>
-        <p>Small text about this one. I did this and that and some of that.</p>
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <a href="mailto: hei@mathildeelinor.no">hei@mathildeelinor.no</a>
       </section>
     </main>
-    <footer id="footer">
-      <span>Work with me?</span>
-      <p>hei@mathilde.no</p>
-    </footer>
+    <footer>&copy; Mathilde Elinor Wiik</footer>
     <script src="js/script.js"></script>
   </body>
 </html>

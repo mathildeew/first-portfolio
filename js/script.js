@@ -1,5 +1,4 @@
 // CIRCLE POINTER
-
 const circle = document.getElementById("circle");
 const circleStyle = circle.style;
 
@@ -10,19 +9,4 @@ document.addEventListener("mousemove", (e) => {
   });
 });
 
-// STICKY NAVIGATION
-
-const navbar = document.getElementById("nav");
-const sticky = navbar.offsetTop;
-
-function stickyNav() {
-  if (window.pageYOffset.add >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
-window.onscroll = function () {
-  stickyNav();
-};
+// NAVIGATION BUTTON TO NEXT SECTION

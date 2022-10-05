@@ -1,5 +1,14 @@
 import projects from "./data/projects.js";
 
+// Scroll to top on reload
+if (history.scrollRestoration) {
+  history.scrollRestoration = "manual";
+} else {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+}
+
 // // CIRCLE POINTER
 // const circle = document.getElementById("circle");
 // const circleStyle = circle.style;

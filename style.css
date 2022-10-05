@@ -13,12 +13,13 @@
 * {
   margin: 0px;
   padding: 0px;
-  cursor: none;
+  /* cursor: none; */
 }
 
 html {
   font-size: 62.5%; /*62.5% of 16px base font size is 10px*/
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -26,9 +27,6 @@ body {
   background-color: var(--background-color);
   width: 100vw;
   margin: 0;
-}
-
-main {
 }
 
 /* Cursor */
@@ -50,14 +48,6 @@ a {
   color: var(--text-color);
 }
 
-h1 {
-  font: 3rem var(--heading-font);
-  color: var(--pink);
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 h2 {
   font: 8rem var(--heading-font);
   text-align: center;
@@ -67,11 +57,13 @@ h2 {
 
 h3 {
   font: 2rem var(--text-font);
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 p {
   font: 1.6rem var(--text-font);
+  line-height: 27px;
 }
 
 /* HEADER 
@@ -81,17 +73,60 @@ header {
   width: 100%;
   height: 50vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* animation: intro 5s ease-in-out; */
+  animation: intro 4s ease-in-out;
+}
+
+h1 {
+  font: 10.5vw var(--heading-font);
+  color: var(--pink);
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  animation: intro-h1 4s ease-in-out;
+}
+
+header span {
+  background-color: var(--pink);
+  height: 2px;
+  animation: intro-span 4s ease-in-out;
 }
 
 @keyframes intro {
   0% {
     height: 100vh;
+    overflow: hidden;
   }
   100% {
     height: 50vh;
+  }
+}
+
+@keyframes intro-span {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes intro-h1 {
+  0% {
+    letter-spacing: -12px;
+  }
+  50% {
+    letter-spacing: 12px;
+  }
+  100% {
+    letter-spacing: 0;
   }
 }
 
@@ -116,15 +151,16 @@ nav a {
 
 /*  PORTFOLIO
 - - - - - - - - - - - - - - - - - - - - */
+
 .portfolio {
   background-color: var(--burgundy);
-  height: 1880px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content {
-  margin: 0 3%;
-  display: flex;
-  flex-direction: column;
+  margin: 0 4%;
 }
 
 .portfolio h2,
@@ -164,10 +200,27 @@ nav a {
   color: var(--burgundy);
 }
 
-.about .img {
-  background-color: lightgray;
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .content {
+  max-width: 900px;
+}
+
+.centre {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 440px;
+}
+
+.about img {
+  width: 100%;
+  max-width: 400px;
+
   margin-bottom: 60px;
 }
 
@@ -228,6 +281,56 @@ footer {
 
 /*  MEDIA QUIERIES
 - - - - - - - - - - - - - - - - - - - - */
+
+@media (min-width: 768px) {
+  nav a,
+  h2 {
+    font-size: 10rem;
+  }
+
+  .contact a {
+    font-size: 2.5rem;
+  }
+
+  p,
+  .project a {
+    font-size: 1.8rem;
+  }
+
+  .centre {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about img {
+    width: 50%;
+    margin-right: 50px;
+  }
+
+  .centre span {
+    margin: auto 0;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .icons i {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 820px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+  }
+}
+
 @media (min-width: 900px) {
   nav a {
     transition: letter-spacing 1s ease-in;
@@ -237,11 +340,14 @@ footer {
     letter-spacing: 25px;
     transition: letter-spacing 0.2s ease-out;
   }
-  h1 {
-    font-size: 10rem;
-  }
 
   nav a {
     font-size: 7rem;
+  }
+
+  @media (min-width: 1300px) {
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }

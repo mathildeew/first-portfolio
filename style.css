@@ -29,17 +29,6 @@ body {
   margin: 0;
 }
 
-/* Cursor */
-#circle {
-  position: fixed;
-  z-index: 1000;
-  width: 17px;
-  height: 17px;
-  background-color: #94af94;
-  border-radius: 50%;
-  pointer-events: none;
-}
-
 li {
   list-style: none;
 }
@@ -86,13 +75,13 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
-  /* animation: intro-h1 4s ease-in-out; */
+  animation: intro-h1 4s ease-in-out;
 }
 
 header span {
   background-color: var(--pink);
   height: 2px;
-  /* animation: intro-span 4s ease-in-out; */
+  animation: intro-span 4s ease-in-out;
 }
 
 /* HEADER ANIMATIONS WHEN ENTERING SITE
@@ -141,6 +130,7 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  transition: letter-spacing 2s;
 }
 
 nav a {
@@ -149,16 +139,38 @@ nav a {
   text-decoration: 3px underline;
   letter-spacing: 3px;
   padding: 5px;
+  transition: letter-spacing 2s;
 }
 
 /*  PORTFOLIO
 - - - - - - - - - - - - - - - - - - - - */
+
+.loader {
+  background-color: var(--pink);
+  height: 2px;
+  width: 10%;
+  margin-top: 70px;
+  animation: loader infinite 3s ease-in-out;
+}
+
+@keyframes loader {
+  0% {
+    width: 10%;
+  }
+  50% {
+    width: 90%;
+  }
+  100% {
+    width: 10%;
+  }
+}
 
 .portfolio {
   background-color: var(--burgundy);
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
 .content {
@@ -191,6 +203,37 @@ nav a {
   display: inline;
   margin-right: 10px;
   margin-bottom: 60px;
+  position: relative;
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--pink);
+  opacity: 0;
+  transition: opacity 400ms, transform 400ms;
+}
+
+.project a:hover::after,
+a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+.project a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.project a:hover::after,
+.project a:focus::after {
+  transform: scale(1);
 }
 
 /*  ABOUT
@@ -334,6 +377,23 @@ footer {
 }
 
 @media (min-width: 900px) {
+  /* * {
+    cursor: none;
+  }
+
+  Cursor
+  #circle {
+    position: fixed;
+    z-index: 1000;
+    width: 17px;
+    height: 17px;
+    background-color: #94af94;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  */
+
   nav a {
     transition: letter-spacing 1s ease-in;
   }

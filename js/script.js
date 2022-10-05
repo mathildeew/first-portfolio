@@ -1,6 +1,6 @@
 import projects from "./data/projects.js";
 
-// CIRCLE POINTER
+// // CIRCLE POINTER
 // const circle = document.getElementById("circle");
 // const circleStyle = circle.style;
 
@@ -13,7 +13,10 @@ import projects from "./data/projects.js";
 
 // Display projects
 const projectsContainer = document.querySelector(".projects");
+const loader = document.querySelector(".loader");
+
 projects.forEach(function (project) {
+  loader.style.display = "none";
   projectsContainer.innerHTML += `
                                   <div class="project">
                                     <img src=${project.img} alt=${projects.title}/>

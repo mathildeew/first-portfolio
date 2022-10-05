@@ -28,6 +28,13 @@ projects.forEach(function (project) {
                                  `;
 });
 
+// Change image
+const image = document.querySelector("#aboutImg");
+
+image.addEventListener("onclick", () => {
+  document.getElementById("aboutImg").src = "images/cat1.jpg";
+});
+
 // Hovering effects
 
 // HTML

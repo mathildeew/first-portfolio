@@ -5,8 +5,7 @@ export default [
     description:
       "This project is assigned by Cerchio Studio, a fictional ceramic studio. The final product is a blog site with its content stored as a headless Content Management System.",
     img: "../images/cerchio-studio-screenshot.jpg",
-    gitHubLink:
-      "https://github.com/Noroff-FEU-Assignments/project-exam-1-mathildeew.git",
+    gitHubLink: "https://github.com/mathildeew/projext-exam-1-cerchio-studio",
     webLink: "https://cerchio-studio.netlify.app/",
   },
   {
@@ -15,8 +14,7 @@ export default [
     description:
       "This project was a part of several courses of the front-end development study program. The goal was to create an online shop selling men's and women's rain jackets.",
     img: "../images/rainydays-screenshot.jpg",
-    gitHubLink:
-      "https://github.com/Noroff-FEU-Assignments/cross-course-project-mathildeew.git",
+    gitHubLink: "https://github.com/mathildeew/cross-course-project-rainydays",
     webLink: "https://rainydays-ccp.netlify.app/",
   },
   {
@@ -26,7 +24,7 @@ export default [
       "The website for Community Science Museum, a fictional museum. The brief was to make a informative and engaging website, that should be responsive and easy to use on a variety of devices.",
     img: "../images/cms-screenshot.jpg",
     gitHubLink:
-      "https://github.com/mathildeew/semester-project-1-community-science-museum.git",
+      "https://github.com/mathildeew/semester-project-1-community-science-museum",
     webLink: "https://csm-oslo.netlify.app/",
   },
 ];

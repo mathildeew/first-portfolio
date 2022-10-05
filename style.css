@@ -76,7 +76,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: intro 4s ease-in-out;
+  /* animation: intro 4s ease-in-out; */
 }
 
 h1 {
@@ -86,15 +86,17 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
-  animation: intro-h1 4s ease-in-out;
+  /* animation: intro-h1 4s ease-in-out; */
 }
 
 header span {
   background-color: var(--pink);
   height: 2px;
-  animation: intro-span 4s ease-in-out;
+  /* animation: intro-span 4s ease-in-out; */
 }
 
+/* HEADER ANIMATIONS WHEN ENTERING SITE
+- - - - - - - - - - - - - - - - - - - - */
 @keyframes intro {
   0% {
     height: 100vh;
@@ -120,10 +122,10 @@ header span {
 
 @keyframes intro-h1 {
   0% {
-    letter-spacing: -12px;
+    letter-spacing: -3vw;
   }
   50% {
-    letter-spacing: 12px;
+    letter-spacing: 3vw;
   }
   100% {
     letter-spacing: 0;

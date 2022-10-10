@@ -4,10 +4,14 @@
 
 ## Description
 
-My personal website.
+My personal website and portfolio.
 
 ## Bult with
 
 - JavaScript
 - HTML
 - CSS
+
+## Contact
+
+[hei@mathildeelinor.no] (mailto:hei@mathildeelinor.no)

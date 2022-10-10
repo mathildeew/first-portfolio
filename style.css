@@ -134,7 +134,6 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  transition: letter-spacing 2s;
 }
 
 nav a {

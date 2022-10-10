@@ -18,4 +18,4 @@ My personal website and portfolio.
 
 ## Contact
 
-[hei@mathildeelinor.no] (mailto:hei@mathildeelinor.no)
+- [hei@mathildeelinor.no] (mailto:hei@mathildeelinor.no)

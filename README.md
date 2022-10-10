@@ -2,8 +2,6 @@
 
 # mathildeelinor.no
 
-![mathilde-elinor-gif](images/mathilde-elinor.gif)
-
 My personal website and portfolio.
 
 [Visit site](https://www.mathildeelinor.no)

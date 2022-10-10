@@ -30,6 +30,7 @@ projects.forEach(function (project) {
                                   <div class="project">
                                     <img src=${project.img} alt=${projects.title}/>
                                     <h3>${project.title}</h3>
+                                    <h4>${project.project_type}</h4>
                                     <p>${project.description}</p>
                                     <a href= "${project.webLink}">Visit website</a>
                                     <a href= "${project.gitHubLink}">GitHub</a>

@@ -76,6 +76,7 @@ h1 {
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0px;
   white-space: nowrap;
   animation: intro-h1 3s ease-in-out;
 }
@@ -142,16 +143,6 @@ nav a {
   text-decoration: 3px underline;
   letter-spacing: 3px;
   padding: 5px;
-  transition: letter-spacing 0.1s;
-}
-
-nav a {
-  transition: letter-spacing 2s ease-in;
-}
-
-nav a:hover {
-  letter-spacing: 35px;
-  transition: letter-spacing 0.1s ease-out;
 }
 
 /*  PORTFOLIO
@@ -375,6 +366,15 @@ footer {
   }
 
   */
+
+  nav a {
+    transition: letter-spacing 2s ease-in;
+  }
+
+  nav a:hover {
+    letter-spacing: 35px;
+    transition: letter-spacing 0.1s ease-out;
+  }
 
   .project a {
     text-decoration: none;

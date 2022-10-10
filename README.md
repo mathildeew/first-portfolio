@@ -4,8 +4,6 @@
 
 My personal website and portfolio.
 
-<iframe src="https://giphy.com/embed/5ZzyRF3oU38e2ubGvr" width="480" height="134" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/5ZzyRF3oU38e2ubGvr">via GIPHY</a></p>
-
 [Visit site](https://www.mathildeelinor.no)
 
 ## Bult with

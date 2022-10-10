@@ -366,14 +366,14 @@ footer {
 
   */
 
-  /* nav a {
+  nav a {
     transition: letter-spacing 2s ease-in;
   }
 
   nav a:hover {
     letter-spacing: 35px;
     transition: letter-spacing 0.1s ease-out;
-  } */
+  }
 
   .project a {
     text-decoration: none;

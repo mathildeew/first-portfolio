@@ -8,6 +8,6 @@ My personal website.
 
 ## Bult with
 
+- JavaScript
 - HTML
 - CSS
-- JavaScript

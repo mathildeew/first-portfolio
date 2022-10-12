@@ -9,17 +9,6 @@ if (history.scrollRestoration) {
   };
 }
 
-// // CIRCLE POINTER
-// const circle = document.getElementById("circle");
-// const circleStyle = circle.style;
-
-// document.addEventListener("mousemove", (e) => {
-//   window.requestAnimationFrame(() => {
-//     circleStyle.top = `${e.clientY - circle.offsetHeight / 2}px`;
-//     circleStyle.left = `${e.clientX - circle.offsetWidth / 2}px`;
-//   });
-// });
-
 // Display projects
 const projectsContainer = document.querySelector(".projects");
 const loader = document.querySelector(".loader");
@@ -45,59 +34,24 @@ image.addEventListener("onclick", () => {
   document.getElementById("aboutImg").src = "images/cat1.jpg";
 });
 
-// Hovering effects
+// Navigation (when clicked, scroll to section)
+const portfolioLink = document.querySelector("#pLink");
+const portfolio = document.querySelector("#portfolio");
 
-// HTML
-// const htmlLink = document.querySelector(".htmlHover");
+portfolioLink.addEventListener("click", () => {
+  portfolio.scrollIntoView();
+});
 
-// htmlLink.addEventListener("mouseover", () => {
-//   htmlLink.innerHTML = `&#60;html&#62;`;
-//   htmlLink.style.fontFamily = "Source Sans Pro";
-//   htmlLink.style.textTransform = "lowercase";
-// });
+const aboutLink = document.querySelector("#aLink");
+const about = document.querySelector("#about");
 
-// htmlLink.addEventListener("mouseout", () => {
-//   htmlLink.innerHTML = `HTML`;
-//   htmlLink.style.fontFamily = "var(--text-font)";
-//   htmlLink.style.textTransform = "uppercase";
-// });
+aboutLink.addEventListener("click", () => {
+  about.scrollIntoView();
+});
 
-// // CSS
-// const cssLink = document.querySelector(".cssHover");
+const contactLink = document.querySelector("#cLink");
+const contact = document.querySelector("#contact");
 
-// cssLink.addEventListener("mouseover", () => {
-//   cssLink.style.color = "var(--pink)";
-//   cssLink.style.backgroundColor = "var(--burgundy)";
-// });
-
-// cssLink.addEventListener("mouseout", () => {
-//   cssLink.style.color = "var(--burgundy)";
-//   cssLink.style.backgroundColor = "var(--pink)";
-// });
-
-// //  Javascript
-// const jsLink = document.querySelector(".jsHover");
-
-// jsLink.addEventListener("mouseover", () => {});
-
-// jsLink.addEventListener("mouseout", () => {});
-
-// // Adobe XS
-// const xdLink = document.querySelector(".xdHover");
-
-// // Photoshop
-// const psLink = document.querySelector(".psHover");
-
-// // Illustrator
-// const illLink = document.querySelector(".illHover");
-
-// // Wordpress
-// const wpLink = document.querySelector(".wpHover");
-
-// wpLink.addEventListener("mouseover", () => {
-//   wpLink.style.rotate = "calc(180deg)";
-// });
-
-// wpLink.addEventListener("mouseout", () => {
-//   wpLink.style.rotate = "calc(0deg)";
-// });
+contactLink.addEventListener("click", () => {
+  contact.scrollIntoView();
+});

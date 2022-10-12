@@ -18,13 +18,13 @@
     </div>
     <header>
       <h1>Mathilde Elinor</h1>
-      <span id="headerSpan"></span>
+      <span class="headerLine"></span>
     </header>
 
     <nav>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <button id="pLink">portfolio</button>
+      <button id="aLink">about</button>
+      <button id="cLink">contact</button>
     </nav>
 
     <main>
@@ -34,7 +34,7 @@
         <div class="content projects"></div>
       </section>
 
-      <section id="about" class="about">
+      <section id="about" class="about sizing">
         <h2>About</h2>
         <div class="content">
           <div class="centre">
@@ -50,41 +50,38 @@
           </div>
 
           <div class="skills">
-            <h3>Languages & programs (so far, and still learning)</h3>
-            <p>HTML - CSS - JavaScript</p>
-            <p>Adobe XD - Photoshop - Illustrator</p>
-            <p>Wordpress</p>
+            <h3>Skills (so far, and still learning)</h3>
+            <p>HTML / CSS / JavaScript</p>
+            <p>XD / Photoshop / Illustrator / Wordpress</p>
           </div>
 
-          <div class="columns">
-            <div>
-              <h3>Experiene</h3>
-              <div class="group">
-                <div class="left">
-                  <p>2020 - now</p>
-                </div>
-                <div class="right">
-                  <p>Ses Optikk</p>
-                  <p>Optometrist</p>
-                </div>
+          <div>
+            <h3>Experiene</h3>
+            <div class="group">
+              <div class="left">
+                <p>2020 - now</p>
               </div>
-              <div class="group">
-                <div class="left">
-                  <p>2019 - 2020</p>
-                </div>
-                <div class="right">
-                  <p>Liens Optiske</p>
-                  <p>Optometrist</p>
-                </div>
+              <div class="right">
+                <p>Ses Optikk</p>
+                <p>Optometrist</p>
               </div>
-              <div class="group">
-                <div class="left">
-                  <p>2016 - 2019</p>
-                </div>
-                <div class="right">
-                  <p>Ses Optikk</p>
-                  <p>Part time</p>
-                </div>
+            </div>
+            <div class="group">
+              <div class="left">
+                <p>2019 - 2020</p>
+              </div>
+              <div class="right">
+                <p>Liens Optiske</p>
+                <p>Optometrist</p>
+              </div>
+            </div>
+            <div class="group">
+              <div class="left">
+                <p>2016 - 2019</p>
+              </div>
+              <div class="right">
+                <p>Ses Optikk</p>
+                <p>Part time</p>
               </div>
             </div>
 
@@ -124,31 +121,23 @@
         </div>
       </section>
 
-      <section id="contact" class="contact">
+      <section id="contact" class="contact sizing">
         <h2>Contact</h2>
-        <a href="mailto: hei@mathildeelinor.no">hei@mathildeelinor.no</a>
-        <div class="icons">
-          <a
-            href="https://www.instagram.com/matti.koder/"
-            aria-label="My instagram account"
-          >
-            <i class="fa-brands fa-instagram"> </i>
-          </a>
-          <a href="www.linkedin.com" aria-label="My LinkedIn profile">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-
-          <a
-            href="https://github.com/mathildeew"
-            aria-label="My GitHub portfolio"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
+        <div class="line">
+          <p>Email:&nbsp;</p>
+          <a href="mailto: hei@mathildeelinor.no"> hei@mathildeelinor.no</a>
+        </div>
+        <div class="line">
+          <a href="https:/www.instagram.com/matti.koder/">Instagram</a>
+          <p>/&nbsp;</p>
+          <a href="https://www.linkedin.com">LinkedIn</a>
+          <p>/&nbsp;</p>
+          <a href="https://github.com/mathildeew">Github</a>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="sizing">
       <p>&copy; Mathilde Elinor Wiik</p>
     </footer>
     <script defer src="js/script.js" type="module"></script>

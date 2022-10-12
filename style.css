@@ -159,12 +159,12 @@ nav {
 }
 
 nav button {
-  font: 10vh var(--heading-font);
-  /* font-style: italic; */
+  font: 7vh var(--heading-font);
+  font-style: italic;
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
-  /* text-decoration: 3px underline; */
+  text-decoration: 3px underline;
   letter-spacing: 3px;
   background: none;
   border: none;

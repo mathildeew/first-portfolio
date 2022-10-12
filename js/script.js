@@ -1,14 +1,5 @@
 import projects from "./data/projects.js";
 
-// Scroll to top on reload
-if (history.scrollRestoration) {
-  history.scrollRestoration = "manual";
-} else {
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  };
-}
-
 // Display projects
 const projectsContainer = document.querySelector(".projects");
 const loader = document.querySelector(".loader");
@@ -25,13 +16,6 @@ projects.forEach(function (project) {
                                     <a href= "${project.gitHubLink}">GitHub</a>
                                   </div>
                                  `;
-});
-
-// Change image
-const image = document.querySelector("#aboutImg");
-
-image.addEventListener("onclick", () => {
-  document.getElementById("aboutImg").src = "images/cat1.jpg";
 });
 
 // Navigation (when clicked, scroll to section)

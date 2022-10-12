@@ -1,5 +1,14 @@
 import projects from "./data/projects.js";
 
+// Scroll to top on reload
+if (history.scrollRestoration) {
+  history.scrollRestoration = "manual";
+} else {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+}
+
 // Display projects
 const projectsContainer = document.querySelector(".projects");
 const loader = document.querySelector(".loader");

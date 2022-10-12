@@ -371,7 +371,7 @@ footer p {
   a:focus::after {
     transform: scale(1);
   }
-  @media (min-width: 1020px) {
+  @media (min-width: 1700px) {
     .sizing {
       margin-inline: 20%;
     }

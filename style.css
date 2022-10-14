@@ -1,9 +1,9 @@
 @import url("https://use.typekit.net/did6ouf.css");
 
 :root {
-  --background: #b7b3be;
+  --background: #ede7e3;
   --text: #5b3b1c;
-  --heading-font: swear-display, serif;
+  --heading-font: scotch-modern, serif;
   --text-font: montserrat, sans-serif;
 }
 
@@ -103,7 +103,8 @@ header {
 }
 
 h1 {
-  font: 9vw var(--text-font);
+  font: 9vw var(--heading-font);
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0px;
   white-space: nowrap;
@@ -164,9 +165,8 @@ nav {
 }
 
 nav button {
-  font: 7vh var(--heading-font);
-  font-style: italic;
-  font-weight: bold;
+  font: 7vh var(--text-font);
+  /* font-weight: bold; */
   text-transform: uppercase;
   text-align: left;
   text-decoration: 3px underline;
@@ -175,6 +175,17 @@ nav button {
   width: fit-content;
   border: none;
   padding: 5px;
+  cursor: pointer;
+  animation: intro-nav 3s ease-in;
+}
+
+@keyframes intro-nav {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*  PORTFOLIO
@@ -334,7 +345,7 @@ footer p {
   }
 
   nav button:hover {
-    letter-spacing: 35px;
+    letter-spacing: 70px;
     transition: letter-spacing 0.1s ease-out;
   }
 

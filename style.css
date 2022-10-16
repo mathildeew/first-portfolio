@@ -29,6 +29,7 @@ body {
 
 a {
   color: var(--text-color);
+  font-weight: 500;
 }
 
 h1,
@@ -99,7 +100,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: intro 3s ease-in-out;
+  /* animation: intro 3s ease-in-out; */
 }
 
 h1 {
@@ -155,6 +156,15 @@ h1 {
   }
 }
 
+@keyframes intro-nav {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* NAVIGATION 
 - - - - - - - - - - - - - - - - - - - - */
 nav {
@@ -179,34 +189,38 @@ nav button {
   animation: intro-nav 3s ease-in;
 }
 
-@keyframes intro-nav {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /*  PORTFOLIO
 - - - - - - - - - - - - - - - - - - - - */
 .loader {
+  width: 100%;
+  height: 40px;
+  margin-top: 70px;
+  display: contents;
+}
+
+.loader p {
+  animation: loader infinite 5s ease-in-out;
+}
+
+.loader span {
   background-color: var(--text);
   height: 2px;
   width: 10%;
-  margin-top: 70px;
-  animation: loader infinite 3s ease-in-out;
+  animation: loader infinite 5s ease-in-out;
 }
 
 @keyframes loader {
   0% {
     width: 10%;
+    letter-spacing: -2vw;
   }
   50% {
     width: 90%;
+    letter-spacing: 6vw;
   }
   100% {
     width: 10%;
+    letter-spacing: -2vw;
   }
 }
 

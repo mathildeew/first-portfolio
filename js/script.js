@@ -16,15 +16,15 @@ const loader = document.querySelector(".loader");
 projects.forEach(function (project) {
   loader.style.display = "none";
   projectsContainer.innerHTML += `
-                                  <div class="project">
-                                    <img src=${project.img} alt=${projects.title}/>
-                                    <h3>${project.title}</h3>
-                                    <h4>${project.project_type}</h4>
-                                    <p>${project.description}</p>
-                                    <a href= "${project.webLink}" alt="Screenshot of ${project.title}">Visit website</a>
-                                    <a href= "${project.gitHubLink}">GitHub</a>
-                                  </div>
-                                 `;
+                                    <div class="project">
+                                      <img src=${project.img} alt=${projects.title}/>
+                                      <h3>${project.title}</h3>
+                                      <h4>${project.project_type}</h4>
+                                      <p>${project.description}</p>
+                                      <a href= "${project.webLink}" alt="Screenshot of ${project.title}">Visit website</a>
+                                      <a href= "${project.gitHubLink}">GitHub</a>
+                                    </div>
+                                   `;
 });
 
 // Navigation (when clicked, scroll to section)

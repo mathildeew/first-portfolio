@@ -1,4 +1,4 @@
-![mathilde-elinor-gif](images/me-screenshot.png)
+![mathilde-elinor-gif](images/screen.png)
 
 # mathildeelinor.no
 

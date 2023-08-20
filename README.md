@@ -4,8 +4,6 @@
 
 My old portfolio.
 
-[Visit site](https://mathildeelinor.no/old)
-
 ## Bult with
 
 - JavaScript

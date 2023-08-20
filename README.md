@@ -3,7 +3,8 @@
 # mathildeelinor.no
 
 My old portfolio.
-[Visi](https://mathildeelinor.no/old)
+
+[Visit](https://mathildeelinor.no/old)
 
 ## Bult with
 
